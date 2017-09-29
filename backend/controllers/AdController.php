@@ -103,8 +103,10 @@ class AdController extends Controller
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
+            $ad_position = AdPosition::GetallCats();
             return $this->render('update', [
                 'model' => $model,
+                'ad_position' => $ad_position,
             ]);
         }
     }

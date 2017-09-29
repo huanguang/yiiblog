@@ -21,7 +21,7 @@ return [
     'components' => [
         'request' => [
             'csrfParam' => '_csrf-backend',
-            'baseUrl' => '/admin',//新加
+            'baseUrl' => '',//新加
         ],
         'user' => [
             'identityClass' => 'app\models\Admin',
