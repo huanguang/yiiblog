@@ -5,7 +5,7 @@ return [
     'user.passwordResetTokenExpire' => 3600,
     'homepath' => 'blogs/frontend/web',
     'adminpath' => '/backend/web/',
-    'AdminUrl' => 'http://www.yiiblogadmin.com',
+    'AdminUrl' => 'http://www.lhgadmin.com',
     'avatar' => [
     	'avatars' => './../statics/images/avatar/avatar.jpg',
     	'small' => './../statics/images/avatar/avatar.jpg',
