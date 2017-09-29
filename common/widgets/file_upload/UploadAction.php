@@ -92,7 +92,9 @@ class UploadAction extends Action
          *     "size" => "",           //文件大小
          * )
         */
+        $arr = $up->getFileInfo();
+        $arr['url'] = Yii::$app->request->hostInfo.$arr['url'];
         /* 返回数据 */
-        return json_encode($up->getFileInfo());
+        return json_encode($arr);
     }
 }
